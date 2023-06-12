@@ -134,8 +134,8 @@ input {
 	/* logo  image */
   
     .music-p-logo img{
-        height: 25px;
-		width: 25px;
+        height: 12vw !important;
+		width: 12vw !important;
     }
     .music-p-logo h1{
         font-size:3vw ;
@@ -150,7 +150,7 @@ input {
         font-size: 4vw;
     }
     .user-image img{
-        height: 7vh !important;
+        height: 10vw !important;
     }
     .search-bar i{
         font-size: 3vw !important;
@@ -219,9 +219,9 @@ input {
     }
     
  .song-name p:nth-child(1){
-    font-size: 1.1rem !important;
+    font-size: 3.4vw !important;
  }
  .song-name p:nth-child(2){
-    font-size: 1rem !important;
+    font-size: 2.8vw !important;
  }
   }
