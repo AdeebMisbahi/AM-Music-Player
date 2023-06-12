@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM Music Player</title>
+    <!-- this is css file link with html -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- this is for responsive css file link with this html file -->
+  <link rel="stylesheet" href="resposive.css">
+    <!-- This is fontawesome kit for fonts -->
+    <script src="https://kit.fontawesome.com/a6b9797a79.js" crossorigin="anonymous"></script>
+    <!-- this is for animation  -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <!-- top navigation starts here -->
+     <nav id="navigation">
+      <ul class="navList">
+        <li class="music-p-logo">
+            <img src="media/website_logo.png">
+            <div class="name_plate">
+                <h1><a href="#">AM</a></h1>
+            <h5><a href="#">Music Player </a></h5>
+            </div>
+        </li>
+        <li class="fav animate__animated animate__pulse animate__infinite animate__slow" >
+            Favourites
+        </li>
+        <li class="search-bar">
+           <i class="fas fa-search search-ico"></i>
+           
+            <input type="text" name="search" placeholder="Search">
+
+            <i class="fas fa-microphone mic-ico"></i>
+        </li>
+        <li class="notification">
+            <i class="fa-solid fa-bell"></i> 
+            &nbsp;
+            <p>Notifications</p>
+        </li>
+        <li class="user-image">
+            <img src="media/profile_picture.png" style="height: 5vh; border-radius: 50%;">
+        </li>
+      </ul>
+
+     </nav> 
+     <!-- navigation ends here -->
+     <!-- main section starts here -->
+     <main>
+
+        <!-- article section include home crousel and song lists -->
+          <article>
+
+        <div class="artist-template">
+            <div class=artist-image>
+                <!-- there is nothing in this div because all the images and all are added by css -->
+            </div>
+            <!-- artist template details -->
+            <div class="template-detail">
+                <!-- descriptive part of the jumbotron this will contain name , number of followers and all -->
+                <div class="descriptive-part">
+                    <div class="artist-name">
+                        <h2>Tove Styrve</h2>
+                    </div>
+                    <div class="followers">
+                       <span> 21m Followers</span>
+                    </div>
+                    <p class="author">Pop Artist</p>
+                    <!-- short description of the current author -->
+                    <p class="desc">
+                        Swedish pop star Tove Styrke is during fall '20 part of successful music TV-show ”Så Mycket Bättre” where she is doing some covers of other Swedish artists. She is now also working hard in the studio preparing for releasing her first new original music in a few years during first part of '21.
+
+                    </p>
+                </div>
+                <!-- action part -->
+                <div class="action-part">
+                    <!-- action buttons -->
+                    <div class="btns">
+                        <button>Play All</button>
+                        <button>Follow</button>
+                    </div>
+                    <p>
+                        247 Tracks | 128 Albums
+                    </p>
+                </div>
+            </div>
+            </div>
+            <!-- artist-template end here -->
+       <!-- playlist part begins -->
+       <div class="playlist-container">
+          <ul class="list-items">
+            <!-- playlist item 1 -->
+        <li class="item">
+              <ul class="inside-list-items">
+                <li class="inside-item">
+                    <div class="listno-image-name">
+                       <div class="counting-no">01</div>
+                       <div class="image-onhover-playbtn"><img src="Image/Annabelle's Tea Party(NIVIRO).jpg" alt="">
+                        <div class="play-btn">
+                            <i class="fas fa-play" ></i>
+                        </div>
+                     </div> 
+                            <div>
+                                <h4 class="playlist-song-name">Annabelle's Tea Party</h4>
+                                <p class="playlist-singer-name">NIVIRO</p>
+                            </div>
+                    </div>
+                    <div class="duration">
+                        <p>duration</p>
+                    </div>
+                    <div class="addTo-fav-playlist" >
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </li>
+              </ul>
+        </li>
+        <!-- playlist item 2 -->
+        <li class="item">
+            <ul class="inside-list-items">
+              <li class="inside-item">
+                  <div class="listno-image-name">
+                     <div class="counting-no">01</div>
+                     <div class="image-onhover-playbtn"><img src="Image/Bloodpresser(Rogers & Dean, Amvis).jpg" alt="">
+                        <div class="play-btn">
+                            <i class="fas fa-play" ></i>
+                        </div>
+                     </div> 
+                          <div>
+                              <h4 class="playlist-song-name">Bloodpresser</h4>
+                              <p class="playlist-singer-name">Rogers & Dean, Amvis</p>
+                          </div>
+                  </div>
+                  <div class="duration">
+                      <p>duration</p>
+                  </div>
+                  <div class="addTo-fav-playlist" >
+                      <i class="far fa-heart"></i>
+                      <i class="fas fa-plus"></i>
+                  </div>
+              </li>
+            </ul>
+      </li>
+      <!-- playlist song item 3 -->
+      <li class="item">
+        <ul class="inside-list-items">
+          <li class="inside-item">
+              <div class="listno-image-name">
+                 <div class="counting-no">01</div>
+                 <div class="image-onhover-playbtn"><img src="Image/Curse(Strybo).jpg" alt="">
+                    <div class="play-btn">
+                        <i class="fas fa-play" ></i>
+                    </div>
+                 </div>
+                      <div>
+                          <h4 class="playlist-song-name">Curse</h4>
+                          <p class="playlist-singer-name">Strybo</p>
+                      </div>
+              </div>
+              <div class="duration">
+                  <p>duration</p>
+              </div>
+              <div class="addTo-fav-playlist" >
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-plus"></i>
+              </div>
+          </li>
+        </ul>
+  </li>
+  <!-- playlist song item 4 -->  
+  <li class="item">
+    <ul class="inside-list-items">
+      <li class="inside-item">
+          <div class="listno-image-name">
+             <div class="counting-no">01</div>
+             <div class="image-onhover-playbtn"><img src="Image/Dreamatic(iFeature).jpg" alt="">
+                <div class="play-btn">
+                    <i class="fas fa-play" ></i>
+                </div>
+             </div>
+                  <div>
+                      <h4 class="playlist-song-name">Dreamatic</h4>
+                      <p class="playlist-singer-name">iFeature</p>
+                  </div>
+          </div>
+          <div class="duration">
+              <p>duration</p>
+          </div>
+          <div class="addTo-fav-playlist" >
+              <i class="far fa-heart"></i>
+              <i class="fas fa-plus"></i>
+          </div>
+      </li>
+    </ul>
+</li>
+<!-- playlist song item 5 -->
+<li class="item">
+    <ul class="inside-list-items">
+      <li class="inside-item">
+          <div class="listno-image-name">
+             <div class="counting-no">01</div>
+             <div class="image-onhover-playbtn"><img src="Image/Dreamer Alan Walker.jpg" alt="">
+                <div class="play-btn">
+                    <i class="fas fa-play" ></i>
+                </div>
+             </div>
+                  <div>
+                      <h4 class="playlist-song-name">Dreamer</h4>
+                      <p class="playlist-singer-name">Alan Walker</p>
+                  </div>
+          </div>
+          <div class="duration">
+              <p>duration</p>
+          </div>
+          <div class="addTo-fav-playlist" >
+              <i class="far fa-heart"></i>
+              <i class="fas fa-plus"></i>
+          </div>
+      </li>
+    </ul>
+</li>
+    </ul>
+</li>
+
+    </ul>
+       </div>
+
+</article>
+
+ <!-- article section is complete -->
+        <!-- now the aside section will start from here -->
+        <!-- the page is responsive. please try reducing the width of the page -->
+        <!-- the aside section will collapse and a "more button will be shown to you." -->
+        <!-- clicking on this more button, you will be shown the aside section   -->
+        <!-- its position will be absolute at lower resolutions -->
+        <!-- this is the label for that more button -->
+        <label for="more" class="animate__animated animate__fadeInRight btn-grad"><i class="fas fa-angle-double-left"></i>More</label>
+        <!-- this is that more button -->
+        <!-- and this is the check box. this will always be hidden -->
+        <!-- when the label is clicked, this checkbox will be checked -->
+        <!-- which will invoke the aside section on lower resolutions -->
+        <input type="checkbox" id="more">
+        <!-- </div> -->
+
+<aside>
+     <div class="similar-artists">
+        <div class="similar-artist-heading">
+            <h2>Similar Artist</h2>
+            <p>View All</p>
+        </div>
+        <ul class="artists-list">
+            <!-- list 1 -->
+            <li class="listno">
+                <ul class="inside-artist-list">
+                 <li class="inside-list-detail">
+                     <div class="image-name-container">
+                         <div class="image-onhover-playbtn-2">
+                            <img src="Image/Dreamer Alan Walker.jpg" class="similar-artist-image-dimension">
+                            <div class="play-btn">
+                                <i class="fas fa-play" ></i>
+                            </div>
+                        </div> 
+                    <div class="song-name">
+                     <p>Dreamer</p>
+                     <p  style="color: lightgray;">Alan Walker</p>
+                    </div>
+                     </div>
+                    
+               
+                     <div class="duration">
+                         <i class="fas fa-ellipsis-h"></i>
+                         <p style="color: lightgray;">2:2</p >
+                     </div>
+                 
+                 </li>
+                 
+                </ul>
+ 
+             </li>
+            <!-- list 2 -->
+            <li class="listno">
+                <ul class="inside-artist-list">
+                 <li class="inside-list-detail">
+                     <div class="image-name-container">
+                         <div class="image-onhover-playbtn-2">
+                            <img src="Image/Can't Break Me Down(PHI NIX).jpg" class="similar-artist-image-dimension"> 
+                            <div class="play-btn">
+                                <i class="fas fa-play" ></i>
+                            </div>
+                        </div> 
+                    <div class="song-name">
+                     <p>Can't Break Me Down</p>
+                     <p  style="color: lightgray;">PHI NIX</p>
+                    </div>
+                     </div>
+                    
+               
+                     <div class="duration">
+                         <i class="fas fa-ellipsis-h"></i>
+                         <p style="color: lightgray;">2:2</p >
+                     </div>
+                 
+                 </li>
+                 
+                </ul>
+ 
+             </li>
+             <!-- list 3 -->
+             <li class="listno">
+                <ul class="inside-artist-list">
+                 <li class="inside-list-detail">
+                     <div class="image-name-container">
+                         <div class="image-onhover-playbtn-2">
+                            <img src="Image/Dreamatic(iFeature).jpg" class="similar-artist-image-dimension"> 
+                            <div class="play-btn">
+                                <i class="fas fa-play" ></i>
+                            </div>
+                        </div> 
+                    <div class="song-name">
+                     <p>Dreamatic</p>
+                     <p  style="color: lightgray;">iFeature</p>
+                    </div>
+                     </div>
+                    
+               
+                     <div class="duration">
+                         <i class="fas fa-ellipsis-h"></i>
+                         <p style="color: lightgray;">2:2</p >
+                     </div>
+                 
+                 </li>
+                 
+                </ul>
+ 
+             </li>
+
+        </ul>
+     </div>
+
+     <div class="recently-played">
+        <div class="recently-played-heading">
+            <h2>Recently Played</h2>
+            <p>View All</p>
+        </div>
+
+
+        <ul class="list-items">
+            <!-- recently played item 1 -->
+        <li class="item">
+              <ul class="inside-list-items">
+                <li class="inside-item">
+                    <div class="listno-image-name">
+                       <div class="counting-no">01</div>
+                       <div class="image-onhover-playbtn"><img src="Image/Ghost Towm(Arcando, ThatBehavior).jpg" alt="">
+                        <div class="play-btn">
+                            <i class="fas fa-play" ></i>
+                        </div>
+                     </div> 
+                            <div>
+                                <h4 class="playlist-song-name">Ghost Towm</h4>
+                                <p class="playlist-singer-name">Arcando, ThatBehavior</p>
+                            </div>
+                    </div>
+                
+                    <div class="addTo-fav-playlist" >
+                        <i class="far fa-heart"></i>
+                        
+                    </div>
+                </li>
+              </ul>
+        </li>
+          <!-- recently played item 2 -->
+          <li class="item">
+            <ul class="inside-list-items">
+              <li class="inside-item">
+                  <div class="listno-image-name">
+                     <div class="counting-no">01</div>
+                     <div class="image-onhover-playbtn"><img src="Image/GoodWithIt(Rameses B, SOUNDR).jpg" alt="">
+                      <div class="play-btn">
+                          <i class="fas fa-play" ></i>
+                      </div>
+                   </div> 
+                          <div>
+                              <h4 class="playlist-song-name">Good With It</h4>
+                              <p class="playlist-singer-name">SOUNDR</p>
+                          </div>
+                  </div>
+              
+                  <div class="addTo-fav-playlist" >
+                      <i class="far fa-heart"></i>
+                      
+                  </div>
+              </li>
+            </ul>
+      </li>
+        <!-- recently played item 3 -->
+        <li class="item">
+            <ul class="inside-list-items">
+              <li class="inside-item">
+                  <div class="listno-image-name">
+                     <div class="counting-no">01</div>
+                     <div class="image-onhover-playbtn"><img src="Image/Home(PLEEG).jpg" alt="">
+                      <div class="play-btn">
+                          <i class="fas fa-play" ></i>
+                      </div>
+                   </div> 
+                          <div>
+                              <h4 class="playlist-song-name">Home</h4>
+                              <p class="playlist-singer-name">PLEEG</p>
+                          </div>
+                  </div>
+              
+                  <div class="addTo-fav-playlist" >
+                      <i class="far fa-heart"></i>
+                      
+                  </div>
+              </li>
+            </ul>
+        </li>
+            </ul>
+      </li>
+        </ul>
+        </div>
+
+</aside>
+     </main>
+
+    <!-- footer section start here -->
+     <footer id="bottom">
+        
+            <input type="range" min="0" max="100" value="0" class="progress-slider my-range">
+     
+     <div class="buttom-content">
+        <div class="song-info">
+            <img src="Image/wavv.png" alt="">
+            <p>Let me love you</p>
+         </div>
+
+
+       <div class="control">
+         <div><i class="fas fa-random"></i></div>
+            <div><i class="fas fa-step-backward"></i></div>
+                <div><i class="fas fa-pause-circle"></i></div>
+                <div><i class="fas fa-step-forward"></i></div>
+                <div><i class="fas fa-redo"></i></div>
+        </div>
+
+        <div class="extras">
+            <div>
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div>
+                <i class="fas fa-laptop"></i>
+            </div>
+            <div>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div>
+                <input type="range" min="0" max="100" class="volume-progress">
+            </div>
+            <div>
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+
+</div>
+
+     </footer>
+    <!-- footer section end here -->
+
+
+
+</body>
+</html>

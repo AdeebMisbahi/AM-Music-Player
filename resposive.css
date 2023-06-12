@@ -1,0 +1,227 @@
+/* here are resposive css file 
+desktop first aproach */
+@media screen and (max-width: 1200px){
+.fav {
+    display: none !important;
+}
+.search-bar{
+    width: 30% ;
+}
+input {
+    font-size: 11px !important;
+}
+.artist-name h2{
+    font-size: 2.4vw !important;
+}
+.artist-name p{
+    font-size: 1.5vw !important;
+}
+
+.desc{
+    font-size: 1.2vw;
+}
+}
+@media screen and (max-width: 900px){
+    .desc {
+		font-size: 1.6vw;
+	}
+    label {
+		display: block;
+	}
+    aside {
+		visibility: hidden ;
+		opacity: 0;
+		position: absolute;
+		width: 300px;
+		height: 68vh;
+		background-color: #050043;
+		box-shadow: 0px 0px 2px 1px white;
+		right: 0px;
+		top: 23.5%;
+		overflow: scroll;
+		padding-left:10px;
+		z-index: 5;
+		padding-right:5px;
+		transition:visibility ease-in-out 0.3s;
+		transition: opacity ease-in-out 0.3s;
+	}
+	/* more button */
+	input[type="checkbox"]:checked ~ aside {
+		visibility: visible;
+		opacity: 1;
+	}
+    article{
+        width: 95%;
+    }
+   .artist-template{
+    height: 30vw;
+   }
+   .artist-template .artist-image {
+    height: 100%;
+    width: 30vw;
+   }
+
+   .author{
+    font-size: 2vw;
+   }
+   .action-part p {
+    font-size: 2vw;
+}
+.btns > button {
+    height: 3vw;
+    width: 11vw;
+    font-size: 1.6vw;
+}
+/* font size for playlist */
+.action-part p{
+    font-size: 1.5vw;
+}
+.playlist-song-name{
+    font-size: 1.5vw;
+}
+.playlist-singer-name{
+    font-size: 1.2vw;
+}
+.duration p{
+    font-size: 1.2vw;
+}
+.addTo-fav-playlist i{
+    font-size: 1.3vw;
+}
+.counting-no{
+    font-size: 1.2vw;
+}
+}
+@media screen and (max-width: 700px){
+    
+	/* in the screens of this width, generally volume buttons are provided at the side. */
+	/* so there is no need for the volume slider at this width. so i have removed them from the display */
+	/* followers and author */
+
+.followers,
+	.author {
+		font-size: 2vw;
+	}
+    .desc {
+		font-size: 1.8vw;
+	}
+    .extras > div:nth-child(3) {
+		display: none;
+	}
+	.extras > div:nth-child(4) {
+		display: none;
+	}
+    .search-bar i{
+        font-size: 2vw !important;
+    }
+    #bottom i{
+        font-size: 2.5vw !important;
+    }
+    .buttom-content p{
+        font-size: 2vw !important;
+    }
+    .song-name p:nth-child(1){
+        font-size: 1rem !important;
+     }
+     .song-name p:nth-child(2){
+        font-size: .8rem !important;
+     }
+    
+}
+@media screen and (max-width: 550px) {
+	/* this is the most important media query */
+	/* navigation bar section */
+	/* logo  image */
+  
+    .music-p-logo img{
+        height: 30px;
+		width: 30px;
+    }
+    .music-p-logo h1{
+        font-size:3vw ;
+    }
+    .music-p-logo h5{
+        font-size: 2vw;
+    }
+    .notification p{
+        display: none;
+    }
+    .notification i{
+        font-size: 4vw;
+    }
+    .user-image img{
+        height: 7vh !important;
+    }
+    .search-bar i{
+        font-size: 3vw !important;
+    }
+
+    .artist-name h2{
+		font-size: 4vw !important;
+	}
+	/* followers and author */
+	.followers,
+	.author {
+		font-size: 3vw;
+	}
+	/* artist template description */
+	.desc {
+		font-size: 3vw;
+		padding-left: 4px;
+	}
+	/* buttons and all in the jumbotron */
+	.action-part {
+		padding-top: 0px;
+	}
+	/* jumbotron */
+	.artist-template {
+		height: 60vw;
+		text-align: justify;
+	}
+	/* image in the jumbotron */
+	.artist-image {
+		height: 60vw;
+		width: 60vw;
+	}
+	/* buttons and stuff */
+	.btns > button {
+		height: 6vw;
+		width: 17vw;
+		font-size: 3.2vw;
+	}
+    .buttom-content p{
+        font-size: 2.5vw;
+       margin-left: 16%;
+       margin-top:5% ;
+    }
+	/* this is the image in the footer section of the page. due to less space, it has to be removed at such lower resolutions. */
+	/* there is another option, but it will look messy and small */
+	.song-info img {
+		display: none;
+	}
+    /* now for plauyliat part */
+    .counting-no {
+        font-size: 2.5vw;
+    }
+    .playlist-song-name {
+        font-size: 3vw !important;
+    }
+    .playlist-singer-name {
+        font-size: 2.5vw;
+    }
+    .duration p,
+    .addTo-fav-playlist i{
+        font-size: 2.5vw;
+    }
+    /* font size for level */
+    label, label i{
+        font-size: 3vw;
+    }
+    
+ .song-name p:nth-child(1){
+    font-size: 1.1rem !important;
+ }
+ .song-name p:nth-child(2){
+    font-size: 1rem !important;
+ }
+  }
